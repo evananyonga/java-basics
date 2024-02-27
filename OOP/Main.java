@@ -9,5 +9,9 @@ public class Main {
         Oops myImport = new Oops();
         System.out.println(myImport.x);
         System.out.println(food.greeting);
+
+        Oops myCar = new Oops();
+        myCar.fullThrottle();
+        myCar.speed(200);
     }
 }

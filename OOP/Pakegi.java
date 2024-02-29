@@ -4,6 +4,7 @@ import java.time.LocalTime;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Pakegi {
     // Using built-in Java packages
@@ -52,6 +53,37 @@ public class Pakegi {
          * getFirst();
          * getLast();
          */
+
+        //  HashMaps
+        HashMap <String, String> capitalCities = new HashMap<String, String>(); // Creating a HashMap object
+        // Adding keys and values to the HashMap object
+        capitalCities.put("Kenya", "Nairobi");
+        capitalCities.put("Uganda", "Kampala");
+        capitalCities.put("Angola", "Luanda");
+        capitalCities.put("Zimbabwe", "Harare");
+        capitalCities.put("Cote D'Ivore", "Abidjan");
+
+        System.out.println(capitalCities);
+        System.out.println(capitalCities.get("Uganda"));
+        capitalCities.remove("Angola");
+        System.out.println(capitalCities.size());
+        System.out.println(capitalCities);
+        // capitalCities.clear();
+
+        /* Looping through a HashMap */
+        // Using the foreach loop
+        for (String i : capitalCities.keySet()) {
+            System.out.println(i + " " + capitalCities.get(i));
+        };
+
+        // Creating a HashMap object called people that will store String keys and Integer values:
+        HashMap <String, Integer> people = new HashMap<String, Integer>();
+
+        // Adding keys of Names and values of Age
+        people.put("Naki", 21);
+        people.put("Affie", 25);
+        people.put("Kasakya", 28);
+        System.out.println(people);
     }
 
 }

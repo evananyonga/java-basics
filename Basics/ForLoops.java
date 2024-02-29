@@ -6,6 +6,7 @@ public class ForLoops {
             System.out.println(i);
         }
 
+        // The foreach loop
         String[] cars = {"Volvo", "BMW", "Mercedes"};
         for (String i: cars) {
             System.out.println(i);

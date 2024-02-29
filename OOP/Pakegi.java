@@ -42,6 +42,16 @@ public class Pakegi {
         cars.clear(); 
 
         System.out.println(cars.size()); 
+
+        // LinkedLists
+        /* Works exactly like the ArrayList but used for different purposes. However, it has other useful methods like
+         * addFirst();
+         * addLast();
+         * removeFirst();
+         * removeLast();
+         * getFirst();
+         * getLast();
+         */
     }
 
 }

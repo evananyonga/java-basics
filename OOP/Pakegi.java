@@ -5,6 +5,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 
 public class Pakegi {
     // Using built-in Java packages
@@ -34,15 +35,24 @@ public class Pakegi {
         cars.add("Volvo"); // Adding elements to an ArrayList
         cars.add("BMW");
         cars.add("Mazda");
+        cars.add("Toyota");
         System.out.println(cars);
         System.out.println(cars.get(0)); // Accessing an element at the zero index 
         cars.set(0, "VW"); // Changing an element at the zero index 
         System.out.println(cars); 
         cars.remove(2); // Removing an element at the 2nd index 
         System.out.println(cars); 
-        cars.clear(); 
+        // cars.clear(); 
+
+        // Looping an ArrayList with the Iterator class
+        Iterator<String> it = cars.iterator(); // Creating an iterator object
+
+        while (it.hasNext()) {
+            System.out.println(it.next());
+        }
 
         System.out.println(cars.size()); 
+        // System.out.println(it.next()); // printing the first item in an ArrayList with an Iterator
 
         // LinkedLists
         /* Works exactly like the ArrayList but used for different purposes. However, it has other useful methods like
@@ -84,6 +94,8 @@ public class Pakegi {
         people.put("Affie", 25);
         people.put("Kasakya", 28);
         System.out.println(people);
+
+        /* HashSets operate like HashNaps */
     }
 
 }

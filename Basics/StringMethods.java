@@ -20,5 +20,10 @@ public class StringMethods {
         System.out.println(quoteString);
         System.out.println(crazy);
         System.out.println(enter);
+
+        // Count the number of words in a string object
+        String sentence = "The quick brown fox";
+        int countWords = sentence.split("\s").length;
+        System.out.println(countWords);
     }
 }
